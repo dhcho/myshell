@@ -729,7 +729,7 @@ int dup2(int filedes, int filedes2);
 
 1)   프로그램 실행 방법
 
- ![03](.\images\03.jpg)
+ ![03](https://raw.githubusercontent.com/dhcho/myshell/master/images/03.jpg)
 
 Makefile을 이용해 make로 myshell이라는 실행 파일을 생성한다. 
 
@@ -739,17 +739,17 @@ Makefile을 이용해 make로 myshell이라는 실행 파일을 생성한다.
 
  
 
- ![04](.\images\04.jpg)
+ ![04](https://raw.githubusercontent.com/dhcho/myshell/master/images/04.jpg)
 
  위의 화면은 출력 리다이렉션(">", ">>")을 사용하여 제대로 파일에 출력 되는지 볼 수 있는 화면이다. ls -al >> list1과 ps >> list1이 제대로 파일에 출력 되었음 cat 명령을 통해 알 수 있다. Append 리다이렉션(">>")의 경우 추가구현 한 부분이다. 보다시피 파일 Append도 정상적으로 동작하는 것을 확인 할 수 있다.
 
- ![05](.\images\05.jpg)
+ ![05](https://raw.githubusercontent.com/dhcho/myshell/master/images/05.jpg)
 
  위의 화면은 파일 입출력 리다이렉션("<", ">")을 동시에 실행한 화면이다. 명령 cat < list1 > foo를 입력하면 list1의 파일 data를 입력으로 받아 foo 파일에 list1의 파일 data를 출력하고 있는 모습을 cat 명령어를 통해 정상적으로 동작함을 확인할 수 있다. 
 
  
 
- ![06](.\images\06.jpg)
+ ![06](https://raw.githubusercontent.com/dhcho/myshell/master/images/06.jpg)
 
 위의 화면에서는 입력 리다이렉션("<")을 사용하여 cat < list1 명령이 제대로 실행 되는지를
 
@@ -757,19 +757,19 @@ Makefile을 이용해 make로 myshell이라는 실행 파일을 생성한다.
 
  
 
- ![07](.\images\07.jpg)
+ ![07](https://raw.githubusercontent.com/dhcho/myshell/master/images/07.jpg)
 
 depth 1 파이프를 실행 했을 때의 화면이다 명령어는 ls -l | wc이며 정상적으로 실행 되는 모습을 확인 할 수 있다.
 
  
 
- ![08](.\images\08.jpg)
+ ![08](https://raw.githubusercontent.com/dhcho/myshell/master/images/08.jpg)
 
  위의 화면은 추가구현 한 부분이다. depth 1 파이프까지 구현하는 것이지만 추가구현 한 부분에서는 depth 20 파이프까지 실행이 가능하다. 명령어 ls -al | sort -r | head -n 5인 depth 3 파이프 명령도 제대로 동작하며 ls -al | sort -r | head -n 5 | wc인 depth 4 파이프 명령, ls -al | sort -r | head -n 5 | wc > list2인 depth 4 파이프 명령 + 입출력 리다이렉션의 복합적인 명령도 정상적으로 수행되는 것 cat 명령을 통해 확인 할 수 있다.
 
  
 
- ![09](.\images\09.jpg)
+ ![09](https://raw.githubusercontent.com/dhcho/myshell/master/images/09.jpg)
 
  위의 화면은 에러의 경우를 처리한 화면이다. 출력 파일을 지정하지 않았거나(ls > ) 출력파일을 복합적으로 지정한 경우 모두 에러로 처리한다. 다만 ls > out1 > out2 명령의 경우 실제 Shell에서 동작해본 결과 ls의 출력 결과가 out2로 저장되는 것을 확인할 수 있었다. 그러므로 실제 Shell과 동일하게 ls > out1 > out2는 에러로 처리하지 않고 실제 Shell과 동일하게 처리되도록 하였다.
 
