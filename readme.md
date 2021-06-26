@@ -22,9 +22,9 @@
 
 ​                               
 
- ![01](.\images\01.jpg)
+ ![01](https://raw.githubusercontent.com/dhcho/myshell/master/images/01.jpg)
 
-![02](.\images\02.jpg)
+![02](https://raw.githubusercontent.com/dhcho/myshell/master/images/02.jpg)
 
 파이프를 생성하게 되면 두 개의 파일 디스크립터가 생성(fd[2]) 된다. fd는 파일 디스크립터를 말한다. 그림에 설명된 것처럼 fd[0]는 파이프 출구, fd[1]은 파이프 입구 즉, 파이프로부터 데이터를 받고자 할 때는 fd[0], 파이프로부터 데이터를 출력하고자 할 때 fd[1]이다.
 
