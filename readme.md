@@ -33,7 +33,7 @@
  
 
 ### Pseudocode
-
+```
 int main(int argc, char **argv)
 
 {
@@ -491,7 +491,7 @@ int isBackgroundJob(parseInfo *info) {
 ​           return 0;
 
 }
-
+```
  
 
  
